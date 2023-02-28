@@ -1,5 +1,5 @@
 def get_list():
-  with open("/data/rlaalsrl0922/BCprediction/BCprediction/순서.txt", "r") as f:
+  with open("/data/rlaalsrl0922/BCpredict/list.txt", "r") as f:
       example = f.readlines()
   _dict={}
 
