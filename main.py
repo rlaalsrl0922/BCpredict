@@ -14,7 +14,7 @@ epochs = 60     # Number of epochs
 
 def main():
     _list=get_list()
-    annotationdir='/data/rlaalsrl0922/BC/BCprediction/etri.tsv'
+    annotationdir='/data/rlaalsrl0922/BCpredict/etri.tsv'
     csAUDIO_DIR = "1. 상담자 녹음본.wav"
     clAUDIO_DIR = "2. 내담자 녹음본.wav"
     device=torch.device("cuda")
