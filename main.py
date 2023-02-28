@@ -6,11 +6,14 @@ from getlist import get_list
 from model import BPM_ST, BPM_MT
 import torch
 import torch.nn.functional as F
+import os
+
 
 is_MT = False   # True for MT, False for ST
 use_CUDA = True # True for GPU, False for CPU
 batch_size = 64 # Batch size
 epochs = 60     # Number of epochs
+os.environ["CUDA_LAUNCH_BLOCKING"]=1
 
 def main():
     _list=get_list()
